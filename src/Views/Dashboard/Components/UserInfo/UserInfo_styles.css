@@ -1,0 +1,38 @@
+.user-info-container {
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    height: 350px;
+}
+
+.info-box {
+    width: 90%;
+    height: 250px;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 10px;
+    display: inline-flex;
+    flex-direction: row;
+    text-align: center;
+    background-color: aquamarine;
+
+}
+
+.ui-container-header {
+    height: 50px;
+    margin: auto;
+    text-align: center;
+    line-height: 50px;
+    background-color: rgb(235, 235, 235);
+}
+
+
+.edit-user-button {
+    position: relative;
+    display: block;
+    text-align: center;
+    margin: auto;
+
+}

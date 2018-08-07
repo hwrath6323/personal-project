@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
+// import axios from 'axios';
+
+import './Register_styles.css';
 
 
 
@@ -60,6 +63,22 @@ class Register extends Component {
         }, {});
     }
 
+    // handleSubmit(e) {
+    //     e.preventDefault();
+    //     const {client_id, client_firstName, client_lastName, client_email, client_password, client_phone1} = this.state;
+    //     const newClient = {client_id, client_firstName, client_lastName, client_email, client_password, client_phone1};
+    //     if(this.onSubmit){
+    //         this.onSubmit(e, newClient)
+    //     }
+
+    //     axios.post('/api/client_info', newClient)
+    //         .then(response => { 
+    //                 this.setState(this.refreshState())
+    //             })
+    //         .catch(err => {
+    //             console.warn('Could not register', err);
+    //         })
+    // }
 
 
 
@@ -87,22 +106,22 @@ class Register extends Component {
 
         return(
             <div>
-                Register
+                <h2>Register</h2>
 
                 <form className='register-form'>
                     <div className='input-box'>
 
                         {inputs}
 
-                        <Link to='/'>
-                            <button>Cancel</button>
-                        </Link>
-
-                        <Link to='/'>
-                            <button>Register</button>
-                        </Link>
-
                     </div>
+
+                    <div className='reg-button-box'>
+                        <button type='submit' className='register-button'>Register</button>
+                        <Link to='/'>
+                            <button className='register-button'>Cancel</button>
+                        </Link>
+                    </div>    
+
                 </form>
 
             </div>

@@ -1,0 +1,33 @@
+.register-form {
+    min-width: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-box {
+    width: 500px;
+    min-width: 350px;
+    min-height: 250px;
+    display: inline-flex;
+    flex-direction: column;
+    background-color: silver;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 20px 0px;
+}
+
+.register-button {
+    width: 65px;
+    height: 19px;
+    display: inline;
+    margin: 5px 10px;
+    font-size: 11px;
+}
+
+
+
+input {
+    width: 175px;
+    height: 17px;
+    margin: 10px;
+}
