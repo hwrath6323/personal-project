@@ -1,9 +1,10 @@
 
 .login-box {
     display: inline-block;
-    width: 40%;
+    width: 60%;
     height: 300px;
     max-width: 400px;
+    min-width: 95px;
     max-height: 400px;
     background-color: rgb(226, 224, 224);
     color: black;
@@ -11,12 +12,15 @@
 }
 
 .input-header {
-    padding: 30px;
+    width: 50%;
+    margin: auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
     font-size: 25px;
 }
 
 .login-inputs input {
-    width: 250px;
+    width: 75%;
     height: 20px;
     margin-top: 15px;
     border-radius: 5px;
@@ -27,7 +31,8 @@
 }
 
 .login-buttons button {
-    width: 70px;
+    width: 60%;
+    max-width: 90px;
     height: 25px;
     margin: 7px;
     border-radius: 3px;

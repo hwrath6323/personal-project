@@ -7,13 +7,13 @@ import './UserInfo_styles.css';
 
 class UserInfo extends Component {
 
-    constructor(){
-        super();
+    constructor(props){
+        super(props);
 
         this.state = {
             clientList: [],
             clientInfo: {
-                id: 0,
+                client_id: 0,
                 client_firstName: '',
                 client_lastName: '',
                 client_email: '',
@@ -32,8 +32,8 @@ class UserInfo extends Component {
     //     this.getUserInfo()
     // }
 
-    // getUserInfo = (client_id) => {
-    //     axios.get('/api/client_info' + client_id)
+    // getUserInfo = () => {
+    //     axios.get('/api/client_info/' + client_id)
     //     .then(response => {
     //         this.setState({
     //             clientInfo: response.data,
@@ -49,16 +49,7 @@ class UserInfo extends Component {
                 </div>
 
                 <div className='info-box'>
-                    {this.state.clientList
-                        .map((item) => {
-                            return(
-                                <User {...item}
-                                    className="user-info"
-                                    key={item.id}
-                                />
-                            )
-                        })
-                    }
+                    <User />
                 </div>
             </div>
         )
@@ -68,3 +59,16 @@ class UserInfo extends Component {
 }
 
 export default UserInfo;
+
+
+
+// {this.state.clientInfo
+//     .map((item) => {
+//         return(
+//             <User {...item}
+//                 className="user-info"
+//                 key={item.id}
+//             />
+//         )
+//     })
+// }

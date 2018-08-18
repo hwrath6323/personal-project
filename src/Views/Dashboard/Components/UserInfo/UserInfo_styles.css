@@ -1,22 +1,26 @@
 .user-info-container {
     width: 90%;
+    min-width: 45%;
     margin: auto;
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     height: 350px;
 }
 
 .info-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 90%;
     height: 250px;
+
     margin: auto;
     margin-top: 25px;
     margin-bottom: 25px;
     padding: 10px;
-    display: inline-flex;
-    flex-direction: row;
-    text-align: center;
-    background-color: aquamarine;
+    font-size: 18px;
+    line-height: 40px;
+    background-color: rgb(143, 212, 189);
 
 }
 
@@ -24,15 +28,7 @@
     height: 50px;
     margin: auto;
     text-align: center;
+    font-size: 21px;
     line-height: 50px;
     background-color: rgb(235, 235, 235);
-}
-
-
-.edit-user-button {
-    position: relative;
-    display: block;
-    text-align: center;
-    margin: auto;
-
 }

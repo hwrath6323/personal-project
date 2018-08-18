@@ -34,8 +34,7 @@ module.exports = {
     get_userInfo(req, res){
         const db = req.app.get('db');
 
-        db.user_info([
-            req.params.id])
+        db.client_list.findOne({id:req.params.id})
                 .then(user => res.status(200).send(user))
                 .catch(err => {
                         console.log(err);

@@ -16,9 +16,9 @@ class Dashboard extends Component {
             <div className='dashboard-page'>
                 <div className='dashboard-header'>
                     Dashboard
-                    <Link to='/'>
-                        <button className="logout-button">Logout</button>
-                    </Link>
+                    <button className="logout-button">
+                        <Link to='/'>Logout</Link>
+                    </button>
                 </div>
 
                 <div className='user-box'>

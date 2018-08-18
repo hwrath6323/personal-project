@@ -1,12 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Actor');
+
+
 .register-form {
-    min-width: 350px;
     display: flex;
     flex-direction: column;
+    font-family: 'Actor', sans-serif;
 }
 
 .input-box {
-    width: 500px;
-    min-width: 350px;
+    min-width: 30%;
+    max-width: 300px;
     min-height: 250px;
     display: inline-flex;
     flex-direction: column;
@@ -21,13 +24,17 @@
     height: 19px;
     display: inline;
     margin: 5px 10px;
+    padding: 2px 0px;
     font-size: 11px;
+    font-family: 'Actor', sans-serif;
+    line-height: 11px;
 }
 
 
 
 input {
-    width: 175px;
+    width: 65%;
+    max-width: 200px;
     height: 17px;
     margin: 10px;
 }

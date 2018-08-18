@@ -17,11 +17,13 @@ class UserCalendar extends Component {
                     Calendar
                 </div>
 
-                <div className='calendar-box'>
+                {/* <div className='calendar-box'> */}
                     <Calendar />
-                </div>
-                    
-                <button>Add Event</button>
+                {/* </div> */}
+
+                <div className='add-event-button'>
+                    <button>Add Event</button>
+                </div>    
             </div>
         )
     }
